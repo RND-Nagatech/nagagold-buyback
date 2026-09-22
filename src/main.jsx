@@ -124,7 +124,10 @@ function BuybackEstimateCard({ data, onDownload }) {
             <span className="range-dash">–</span>
             <span>{formatRupiah(buyback.max)}</span>
           </p>
-          <p className="estimate-note">Nilai final dapat berbeda setelah pemeriksaan fisik barang oleh tenaga ahli kami.</p>
+          <p className="estimate-note">
+            <span className="estimate-note-mark" aria-hidden="true">!</span>
+            <span>Nilai final dapat berbeda setelah pemeriksaan fisik barang oleh tenaga ahli kami.</span>
+          </p>
         </>
       ) : (
         <p className="estimate-empty">Estimasi belum tersedia. Silakan hubungi toko kami.</p>
@@ -326,7 +329,7 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <span>© 2026 {data.brandName}</span>
+        <span>© 2026 Nagatech Sistem Integrator</span>
         <span className="footer-status"><span className="status-dot" /> Data Anda aman dan terlindungi</span>
       </footer>
     </div>
