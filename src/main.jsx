@@ -43,7 +43,6 @@ function VerificationBadge({ status }) {
       <span className="badge-icon"><Check size={13} strokeWidth={2.5} /></span>
       <span className="verification-copy">
         <strong>{status}</strong>
-        <small>Dari pembelian Anda</small>
       </span>
     </span>
   );
@@ -146,9 +145,9 @@ function TrustIcon({ type }) {
   return <Icon size={19} strokeWidth={1.6} />;
 }
 
-function TrustPoints() {
+function TrustPoints({ className = '' }) {
   return (
-    <section className="trust-section" aria-label="Keunggulan layanan buyback">
+    <section className={`trust-section ${className}`.trim()} aria-label="Keunggulan layanan buyback">
       {trustPoints.map((point) => (
         <article className="trust-point" key={point.title}>
           <span className="trust-icon"><TrustIcon type={point.icon} /></span>
@@ -295,9 +294,17 @@ function App() {
 
       <main>
         <section className="intro" aria-labelledby="page-title">
-          <div className="eyebrow"><span className="eyebrow-line" /> Layanan Buyback Emas <span className="eyebrow-line" /></div>
-          <h1 id="page-title">Taksir Nilai Buyback Anda</h1>
-          <p>Berikut adalah estimasi nilai buyback berdasarkan data pembelian Anda.</p>
+          <div className="intro-copy">
+            <div className="eyebrow"><span className="eyebrow-line" /> Layanan Buyback Emas</div>
+            <h1 id="page-title">
+              <span className="desktop-title">Nilai Kembali, <em>Lebih Berharga</em></span>
+              <span className="mobile-title">Nilai Kembali,<br /><em>Lebih Berharga</em></span>
+            </h1>
+            <p>Berikut adalah estimasi nilai buyback berdasarkan data pembelian Anda.</p>
+          </div>
+          <p className="intro-side-note intro-side-note-left">Kepercayaan<br />memiliki<br />nilai abadi</p>
+          <p className="intro-side-note intro-side-note-right">Emas<br />tetap bermakna<br />di setiap cerita</p>
+          {/* <p className="brand-statement">Emas<br />tetap bernilai<br />di setiap cerita</p> */}
         </section>
 
         <section className="content-wrap" aria-label="Detail barang dan estimasi buyback">
@@ -324,7 +331,8 @@ function App() {
               <BuybackEstimateCard data={data} onDownload={handleDownload} />
             </div>
           </article>
-          <TrustPoints />
+          <TrustPoints className="desktop-trust" />
+          <TrustPoints className="mobile-trust" />
         </section>
       </main>
 
