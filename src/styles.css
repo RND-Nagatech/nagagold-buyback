@@ -174,7 +174,8 @@ main { position: relative; padding-bottom: 38px; }
   .trust-point, .trust-point:first-child { padding: 12px 2px; border-right: 0; border-bottom: 1px solid var(--border); }
   .trust-point:last-child { border-bottom: 0; }
   .trust-point p { max-width: 280px; }
-  .site-footer { display: none; }
+  .site-footer { display: flex; justify-content: center; padding: 18px 12px 22px; font-size: 9px; text-align: center; }
+  .site-footer .footer-status { display: none; }
 }
 
 @media (max-width: 380px) {
