@@ -1,0 +1,45 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper" x1="800" y1="0" x2="800" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#F8F0E2"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="1370" y1="0" x2="1520" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6C47D"/>
+      <stop offset=".45" stop-color="#B6812E"/>
+      <stop offset="1" stop-color="#F1D99E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(800 520) rotate(90) scale(510 720)">
+      <stop stop-color="#FFFDF9" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#F6E9D0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-80" y="-80" width="1760" height="1260" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#paper)"/>
+  <rect width="1600" height="1100" fill="url(#glow)"/>
+
+  <g opacity=".28" filter="url(#blur)">
+    <circle cx="80" cy="350" r="145" fill="#EACB8A"/>
+    <circle cx="1500" cy="870" r="180" fill="#E8C982"/>
+  </g>
+
+  <g opacity=".68">
+    <path d="M-72 287C50 244 96 153 148 70C184 13 228 -32 300 -67" stroke="url(#gold)" stroke-width="38"/>
+    <path d="M-55 267C58 224 106 137 160 53C193 3 235 -35 294 -64" stroke="#FFF1C7" stroke-opacity=".82" stroke-width="7"/>
+    <path d="M1268 -70C1392 38 1458 161 1501 330C1529 441 1587 506 1665 545" stroke="url(#gold)" stroke-width="42"/>
+    <path d="M1302 -78C1415 35 1470 162 1511 324C1538 432 1596 501 1667 536" stroke="#FFF1C7" stroke-opacity=".8" stroke-width="7"/>
+    <path d="M-80 927C101 841 235 858 385 970C476 1038 570 1083 694 1117" stroke="url(#gold)" stroke-width="56"/>
+    <path d="M-76 897C111 819 240 842 385 947C478 1014 574 1065 702 1097" stroke="#FFF2CC" stroke-opacity=".82" stroke-width="8"/>
+    <path d="M1675 800C1572 775 1516 822 1469 891C1432 946 1385 1012 1314 1075" stroke="url(#gold)" stroke-width="34"/>
+    <path d="M1666 822C1576 800 1524 845 1481 908C1440 968 1392 1028 1328 1084" stroke="#FFF2CC" stroke-opacity=".7" stroke-width="6"/>
+  </g>
+
+  <g opacity=".32" fill="#D6A750">
+    <circle cx="94" cy="298" r="7"/><circle cx="132" cy="270" r="4"/><circle cx="164" cy="318" r="5"/>
+    <circle cx="205" cy="245" r="3"/><circle cx="242" cy="289" r="5"/><circle cx="272" cy="220" r="3"/>
+    <circle cx="1510" cy="780" r="6"/><circle cx="1465" cy="818" r="4"/><circle cx="1544" cy="842" r="3"/>
+  </g>
+</svg>

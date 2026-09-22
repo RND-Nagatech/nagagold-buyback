@@ -1,0 +1,39 @@
+<svg width="1000" height="750" viewBox="0 0 1000 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F1E3"/>
+      <stop offset="1" stop-color="#E4D1AC"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(510 342) rotate(90) scale(284 372)">
+      <stop stop-color="#FFFDF7" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#F1E3C8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="369" y1="225" x2="716" y2="585" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7D988"/>
+      <stop offset=".45" stop-color="#B67C28"/>
+      <stop offset=".7" stop-color="#F0C968"/>
+      <stop offset="1" stop-color="#8E5D1C"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="461" y1="177" x2="550" y2="288" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF0"/>
+      <stop offset=".55" stop-color="#DCCB9B"/>
+      <stop offset="1" stop-color="#9D7F46"/>
+    </linearGradient>
+    <filter id="shadow" x="274" y="175" width="479" height="438" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="21" flood-color="#7B5C2D" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="750" fill="url(#bg)"/>
+  <circle cx="510" cy="340" r="310" fill="url(#glow)"/>
+  <path d="M0 116C208 38 313 78 450 142C607 215 797 160 1000 82" stroke="#B58B42" stroke-opacity=".16"/>
+  <path d="M-25 634C175 570 321 593 454 662C626 751 803 687 1025 584" stroke="#B58B42" stroke-opacity=".13"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="518" cy="396" rx="184" ry="190" transform="rotate(-17 518 396)" stroke="url(#gold)" stroke-width="48"/>
+    <ellipse cx="518" cy="396" rx="135" ry="141" transform="rotate(-17 518 396)" stroke="#FFF1B8" stroke-opacity=".38" stroke-width="6"/>
+    <path d="M455 259L494 189L538 164L590 193L585 256L541 294L493 286L455 259Z" fill="url(#stone)" stroke="#BB903D" stroke-width="7"/>
+    <path d="M494 189L518 230L538 164M455 259L518 230L585 256M518 230L541 294" stroke="#FFFBE6" stroke-opacity=".72" stroke-width="4"/>
+    <path d="M482 207L505 193L516 222L493 238L482 207ZM528 225L541 181L571 198L560 230L528 225Z" fill="#FFF9DC" fill-opacity=".7"/>
+  </g>
+  <circle cx="779" cy="176" r="5" fill="#B58B42" fill-opacity=".5"/>
+  <circle cx="218" cy="543" r="3" fill="#B58B42" fill-opacity=".45"/>
+</svg>
